@@ -1,0 +1,12 @@
+from projects.models import Project
+
+
+def get_projects_queryset(queryset=None):
+    if queryset is None:
+        queryset = Project.objects.all()
+
+    return (
+        queryset.select_related("owner")
+        .prefetch_related("participants")
+        .order_by("-created_at")
+    )
