@@ -33,5 +33,5 @@ TeamFinder — это Django-приложение для поиска проек
 ### 1. Клонировать проект
 
 ```bash
-git clone https://github.com/QUILy12/team-finder
-cd team-finder-ad-main-3
+git clone https://github.com/QUILy12/team-finder.git
+cd team-finder
